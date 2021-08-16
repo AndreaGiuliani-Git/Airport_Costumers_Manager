@@ -1,0 +1,11 @@
+package sale;
+
+public abstract class Sala {
+	
+	private int max_posti;
+	
+	public Sala(int max_posti) {
+		this.max_posti = max_posti;
+	}
+
+}

@@ -1,0 +1,13 @@
+package persone;
+
+public class CartaServizi {
+	
+	private static int cod = 0;
+	private int cod_identificativo;
+
+	public CartaServizi() {
+		this.cod_identificativo = cod;
+		cod++;
+	}
+
+}

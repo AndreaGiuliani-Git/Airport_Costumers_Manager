@@ -1,0 +1,16 @@
+package persone;
+
+public abstract class Persona {
+	
+	private String nome, cognome;
+	private int età;
+	private Sesso sesso;
+	
+	public Persona(String nome, String cognome, int età, Sesso sesso) {
+		this.nome = nome;
+		this.cognome = cognome;
+		this.età = età;
+		this.sesso = sesso;
+	}
+
+}

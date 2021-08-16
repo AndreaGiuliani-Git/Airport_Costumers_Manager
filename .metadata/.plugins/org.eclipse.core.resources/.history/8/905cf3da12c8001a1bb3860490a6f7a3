@@ -1,0 +1,24 @@
+package exceptions;
+
+import sale.Sala;
+
+public class EccezioneSala extends Exception{
+
+	private static final long serialVersionUID = 1L;
+
+	public EccezioneSala() {
+		super("Sala d'attesa piena. Impossibile accedere.\n");
+	}
+	
+/**Eccezione lanciata nel caso in cui la SalaVip fosse piena e non piú accessibile */
+	public EccezioneSala(String messaggio) {
+		super(messaggio);
+	}
+	
+/**Eccezione per implementazione futura in caso un FrequentFlyer non sia n possesso di una carta dei servizi.
+ * In tala caso non potrebbe accedere allla SalaVip. 
+ */
+	public EccezioneSala(Sala s) {
+		super("Viaggiatore senza carta dei servizi. Impossibile accedere a sala vip.\n");
+	}
+}

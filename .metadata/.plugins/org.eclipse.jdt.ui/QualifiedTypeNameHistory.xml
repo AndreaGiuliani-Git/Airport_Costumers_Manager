@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="exceptions.EccezioneNoCarta"/>
+    <fullyQualifiedTypeName name="exceptions.EccezioneCapienzaSala"/>
+    <fullyQualifiedTypeName name="sale.Sala"/>
+    <fullyQualifiedTypeName name="sale.SalaAttesa"/>
+    <fullyQualifiedTypeName name="sale.SalaVip"/>
+    <fullyQualifiedTypeName name="persone.Sesso"/>
+    <fullyQualifiedTypeName name="persone.FrequentFlyer"/>
+    <fullyQualifiedTypeName name="exceptions.EccezioneSala"/>
+    <fullyQualifiedTypeName name="persone.Flyer"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,20 @@
+package persone;
+
+public class Flyer extends Persona{
+
+	private int num_volo;
+	
+	public Flyer(String nome, String cognome, int età, Sesso sesso, int num_volo) {
+		super(nome, cognome, età, sesso);
+		this.num_volo = num_volo;
+	}
+	
+	public int getNum_volo() {
+		return num_volo;
+	}
+
+	public void setNum_volo(int num_volo) {
+		this.num_volo = num_volo;
+	}
+
+}

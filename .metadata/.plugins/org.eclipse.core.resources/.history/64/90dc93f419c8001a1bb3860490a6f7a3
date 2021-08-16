@@ -1,0 +1,45 @@
+package sale;
+
+import exceptions.EccezioneSala;
+import persone.Flyer;
+import persone.FrequentFlyer;
+
+public class SalaVip extends Sala {
+	
+	public SalaVip(int max_posti) {
+		super(max_posti);
+	}
+	
+/**Controlla che la capiena della sala non sia superata e che il viaggiatore sia un FrequentFlyer. 
+ * Ho inoltre lasciato la possibilità ad un FrequentFlyer di non avere la carta dei servizi, 
+ * anche se nella consegna ogni FrequentFlyer ha una carta.*/
+	public void controlloSala(Flyer f) throws EccezioneSala{
+		if(getLista_viaggiatori().size() == getMax_posti()) {
+			String messaggio = "SalaVip piena. Impossibile accedere.\n";
+			throw new EccezioneSala(messaggio);
+		}
+		
+		FrequentFlyer f1 = (FrequentFlyer) f;
+
+		if(f1.getCarta() == null) {
+			throw new EccezioneSala();
+		}
+	}
+	
+/**Controlla che il viaggiatore sia in regola per accedere alla SalaVip e in caso positivo
+ * aggiunge il viaggiatore alla sala. In caso negativo lancia tre tipi di eccezione per 
+ * ogni possibile situazione.
+ */
+	public String accediSala(Flyer f) {
+		try {controlloSala(f);
+			getLista_viaggiatori().add(f);
+			return "Accesso effettuato alla Sala Vip n° " + getId_sala() + "\n";
+		} catch (ClassCastException e ) {
+			return "Non è consentito accedere alla SalaVip a questo viaggiatore";
+		} catch (EccezioneSala e) {
+			return "SALA N° " + getId_sala() + " " + e.getMessage();
+		}
+	}
+	
+
+}

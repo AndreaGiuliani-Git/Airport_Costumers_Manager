@@ -1,0 +1,9 @@
+package exceptions;
+
+public class EccezioneNoCarta extends Exception{
+	
+	public EccezioneNoCarta() {
+		super("Impossibile accedere alla SalaVip.Viaggiatore senza carta dei servizi");
+	}
+
+}

@@ -1,0 +1,6 @@
+package persone;
+
+public enum Sesso {
+	MASCHIO, DONNA
+
+}

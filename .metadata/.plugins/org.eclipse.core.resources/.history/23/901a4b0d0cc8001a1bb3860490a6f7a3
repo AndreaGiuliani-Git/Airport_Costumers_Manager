@@ -1,0 +1,11 @@
+package sale;
+
+import exceptions.EccezioneCapienzaSala;
+import exceptions.EccezioneNoCarta;
+import persone.Flyer;
+
+public interface Accessibile {
+	
+	public void controlloSala(Flyer f) throws EccezioneCapienzaSala;
+
+}

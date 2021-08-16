@@ -1,0 +1,18 @@
+package persone;
+
+public class CartaServizi {
+	
+	private final String c = "CARTA_DEI_SERVIZI";
+	private static int cod = 0;
+	private int cod_identificativo;
+
+	public CartaServizi() {
+		this.cod_identificativo = cod;
+		cod++;
+	}
+
+	public int getCod_identificativo() {
+		return cod_identificativo;
+	}
+
+}

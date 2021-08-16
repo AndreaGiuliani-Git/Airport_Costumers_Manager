@@ -1,0 +1,25 @@
+package sale;
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.EccezioneNoCarta;
+import persone.Flyer;
+import persone.FrequentFlyer;
+public class SalaVip extends Sala {
+	
+	private List<FrequentFlyer> lista_viaggiatori;
+	
+	public SalaVip(int max_posti) {
+		super(max_posti);
+		lista_viaggiatori = new ArrayList<FrequentFlyer>();
+	}
+	
+	public void controlloSala(Flyer f) throws EccezioneCapienzaSala, EccezioneNoCarta{
+		FrequentFlyer f1 = (FrequentFlyer) f;
+		
+		if(f1.getCarta() == null) {
+			throw new EccezioneNoCarta();
+		}
+	}
+
+}

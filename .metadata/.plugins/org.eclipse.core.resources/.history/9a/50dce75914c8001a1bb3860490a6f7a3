@@ -1,0 +1,44 @@
+package sale;
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.EccezioneSala;
+import persone.Flyer;
+import persone.FrequentFlyer;
+public class SalaVip extends Sala {
+	
+	public SalaVip(int max_posti) {
+		super(max_posti);
+	}
+	
+/**Controlla che la capiena della sala non sia superata, che il viaggiatore sia un FrequentFlyer e che sia in possesso
+ * di una carta dei servizi.
+ */
+	public void controlloSala(Flyer f) throws EccezioneSala{
+		if(getLista_viaggiatori().size() == getMax_posti()) {
+			String messaggio = "SalaVip piena. Impossibile accedere.\n";
+			throw new EccezioneSala(messaggio);
+		}
+		
+		FrequentFlyer f1 = (FrequentFlyer) f;
+
+		if(f1.getCarta() == null) {
+			throw new EccezioneSala();
+		}
+	}
+	
+	
+	public void accediSala(Flyer f) throws EccezioneSala{
+		controlloSala(f);
+		getLista_viaggiatori().add((FrequentFlyer) f);
+	}
+	
+	public void stampaInfo() {
+		String s = "SALA VIP - LISTA VIAGGIATORI\n";
+				for(Flyer f : lista_viaggiatori) {
+					s += "[" + f.getNome() + " " + f.getCognome() + "]\n";
+				}
+		System.out.println(s);
+	}
+
+}

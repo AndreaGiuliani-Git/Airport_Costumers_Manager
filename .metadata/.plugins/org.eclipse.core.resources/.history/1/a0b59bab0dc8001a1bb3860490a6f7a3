@@ -1,0 +1,28 @@
+package sale;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.EccezioneSala;
+import persone.Flyer;
+
+public class SalaAttesa extends Sala{
+	
+	private List<Flyer> lista_viaggiatori;
+	
+	public SalaAttesa(int max_posti) {
+		super(max_posti);
+		lista_viaggiatori = new ArrayList<Flyer>();
+	}
+	
+	public void controlloSala(Flyer f) throws EccezioneSala {
+		if(lista_viaggiatori.size() == getMax_posti()) {
+			throw new EccezioneSala();
+		}
+	}
+	
+	public void accediSala(Flyer f) throws EccezioneSala{
+		controlloSala(f);
+	}
+
+}

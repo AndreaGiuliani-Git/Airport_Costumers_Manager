@@ -1,0 +1,18 @@
+package exceptions;
+
+import sale.Sala;
+
+public class EccezioneSala extends Exception{
+
+	public EccezioneSala(Sala s) {
+		super("Sala d'attesa piena.Impossibile accedere.");
+	}
+	
+	public EccezioneSala(String messaggio) {
+		super(messaggio);
+	}
+	
+	public EccezioneSala() {
+		super("Viaggiatore senza carta dei servizi. Impossibile accedere alla sala.");
+	}
+}

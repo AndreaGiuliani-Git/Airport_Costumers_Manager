@@ -1,0 +1,25 @@
+package sale;
+
+import exceptions.EccezioneCapienzaSala;
+import exceptions.EccezioneNoCarta;
+import persone.Flyer;
+
+public abstract class Sala implements Accessibile{
+	
+	private int max_posti;
+	
+	public Sala(int max_posti) {
+		this.max_posti = max_posti;
+	}
+	
+	public abstract void controlloCapienza() throws EccezioneCapienzaSala;
+
+	public int getMax_posti() {
+		return max_posti;
+	}
+
+	public void setMax_posti(int max_posti) {
+		this.max_posti = max_posti;
+	}
+
+}

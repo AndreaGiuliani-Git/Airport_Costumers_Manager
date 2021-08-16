@@ -1,0 +1,12 @@
+package exceptions;
+
+public class EccezioneSala extends Exception{
+
+	public EccezioneSala() {
+		super("Sala d'attesa piena.Impossibile accedere.");
+	}
+	
+	public EccezioneSala(String messaggio) {
+		super(messaggio);
+	}
+}

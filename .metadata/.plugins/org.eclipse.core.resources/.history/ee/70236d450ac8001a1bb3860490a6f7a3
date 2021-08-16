@@ -1,0 +1,9 @@
+package sale;
+
+import persone.Flyer;
+
+public interface Accessibile {
+	
+	public void controlloSala(Flyer f) throws EccezioneNoCarta;
+
+}

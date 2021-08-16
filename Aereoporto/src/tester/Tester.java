@@ -1,0 +1,49 @@
+package tester;
+
+import persone.Flyer;
+import persone.FrequentFlyer;
+import persone.Sesso;
+import sale.SalaAttesa;
+import sale.SalaVip;
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		
+		SalaAttesa s1 = new SalaAttesa(10);
+		SalaAttesa s2 = new SalaAttesa(5);
+		SalaVip s3 = new SalaVip(2);
+		
+		Flyer f1 = new Flyer("Giacomo", "Rossi", 30, Sesso.UOMO, 10120);
+		Flyer f2 = new Flyer("Sara", "Neri", 28, Sesso.DONNA, 25431);
+		FrequentFlyer f3 = new FrequentFlyer("Carlo", "Bianchi", 58, Sesso.UOMO, 17120, 300000);
+		FrequentFlyer f4 = new FrequentFlyer("Paola", "Rossi", 18, Sesso.DONNA, 10120, 274000);
+		FrequentFlyer f5 = new FrequentFlyer("Laura", "Neri", 37, Sesso.DONNA, 10120, 20000);
+		Flyer f6 = new Flyer("Andrea", "Chiaro", 19, Sesso.UOMO, 12281);
+		Flyer f7 = new Flyer("Marco", "Santi", 32, Sesso.UOMO, 23231);
+		Flyer f8 = new Flyer("Sara", "Rossi", 62, Sesso.DONNA, 25414);
+		Flyer f9 = new Flyer("Giovanni", "Vinti", 24, Sesso.UOMO, 34725);
+		
+		f1.stampaInfo();
+		f2.stampaInfo();
+		f3.stampaInfo();
+		f4.stampaInfo();
+		f5.stampaInfo();
+		
+		System.out.println(s1.accediSala(f1));
+		System.out.println(s1.accediSala(f2));
+		System.out.println(s3.accediSala(f1));
+		System.out.println(s3.accediSala(f4));
+		System.out.println(s3.accediSala(f5));
+		System.out.println(s1.accediSala(f6));
+		System.out.println(s1.accediSala(f7));
+		System.out.println(s1.accediSala(f8));
+		System.out.println(s1.accediSala(f9));
+			
+		
+		s1.stampaInfo();
+		s3.stampaInfo();
+		
+	}
+
+}

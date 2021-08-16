@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/f3rb98/Documents/Java/Giuliani_Andrea/.metadata/.plugins/org.eclipse.jdt.core
+2357874999.index
+646308851.index

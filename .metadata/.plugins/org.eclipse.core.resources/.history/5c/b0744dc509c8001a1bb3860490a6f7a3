@@ -1,0 +1,15 @@
+package persone;
+
+public class FrequentFlyer extends Flyer{
+	
+	private int num_miglia;
+	private CartaServizi carta_servizi;
+	
+	public FrequentFlyer(String nome, String cognome, int età , Sesso sesso, int num_volo, int num_miglia, CartaServizi carta_servizi) {
+		super(nome, cognome, età, sesso, num_volo);
+		this.num_miglia = num_miglia;
+		this.carta_servizi = carta_servizi;
+		
+	}
+
+}

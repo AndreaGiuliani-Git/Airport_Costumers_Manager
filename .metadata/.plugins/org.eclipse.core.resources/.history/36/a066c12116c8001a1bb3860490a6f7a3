@@ -1,0 +1,22 @@
+package persone;
+
+public class Flyer extends Persona{
+
+	private int num_volo;
+	
+	public Flyer(String nome, String cognome, int età, Sesso sesso, int num_volo) {
+		super(nome, cognome, età, sesso);
+		this.num_volo = num_volo;
+	}
+	
+	public int getNum_volo() {
+		return num_volo;
+	}
+	
+	public void stampaInfo() {
+		String s = "INFORMAZIONI VIAGGIATORE [FLYER]\n" + "Nome: " + getNome() + "\nCognome: " + getCognome() + "\nEtà: "
+				+ getEtà() + "\nSesso: " + getSesso() + "\nNumero di volo: " + getNum_volo() + "\n--------------------\n\n";
+		System.out.println(s);
+	}
+
+}

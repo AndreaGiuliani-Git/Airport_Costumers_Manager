@@ -1,0 +1,12 @@
+package persone;
+
+public class Flyer {
+	
+	private int num_volo;
+	
+	public Flyer(String nome, String cognome, int età, Sesso sesso, int num_volo) {
+		super(nome, cognome, età, sesso);
+		this.num_volo = num_volo;
+	}
+
+}
