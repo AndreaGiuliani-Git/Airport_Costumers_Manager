@@ -9,4 +9,4 @@ Project writes in Java to manage the passangers in the airport with different pr
 ## HOW TO TEST
 git pull https://github.com/AndreaGiuliani-Git/airport_software.git
 
-*Notice: test with any IDE and running Tester.java*
+*Notice: test with IDE and running Tester.java*
