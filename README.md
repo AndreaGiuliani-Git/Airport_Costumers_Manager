@@ -1,4 +1,4 @@
-# airport_software. Java exercise airport software.
+# Java exercise airport software.
 Author: AndreaGiuliani-Git
 
 Date: 2020-06-3
