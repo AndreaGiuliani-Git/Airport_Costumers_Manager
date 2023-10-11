@@ -1,8 +1,8 @@
-# Java exercise airport software
+# Airport Passengers Manager
 Author: AndreaGiuliani-Git
 
 Date: 2020-06-3
 
 ## SCOPE
-Project written in Java to manage airport passangers with different priority and authorizations.
+Java exam to manage airport passengers with different priority and authorization.
 
